@@ -1,0 +1,124 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #414f69;
+  color: white;
+}
+
+.container {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  margin: 0 auto;
+  width: 256px;
+  text-align: center;
+  border: 10px solid #282c34;
+  border-radius: 5px;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(50px, auto);
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.keypad button {
+  background-color: #282c34;
+  border: 1px solid #414f69;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.keypad button:hover {
+  background-color: #0b645d;
+}
+
+input[type="text"] {
+  width: 100%;
+  height: 75px;
+  font-size: 1.5rem;
+  text-align: right;
+  border: 1px solid #414f69;
+  border-radius: 5px;
+  background-color: #282c34;
+  color: white;
+  padding: 0 10px;
+}
+
+.author {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.8rem;
+}
+
+#result, #clear, #divide, #multiply, #subtract, #add, #result, #percent {
+  background-color: #20a387;
+  color: #282c34;
+}
+
+#clear:hover, #divide:hover, #multiply:hover, #subtract:hover, #add:hover, #result:hover, #percent:hover {
+  background-color: #ffffff;
+}
+
+.author a {
+  color: white;
+  text-decoration: none;
+}
+
+.author a:hover {
+  color: #20a387;
+}
